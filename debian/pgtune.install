@@ -1,0 +1,3 @@
+pgtune /usr/bin
+pg_settings-8.4-32 /usr/share/pgtune
+pg_settings-8.4-64 /usr/share/pgtune

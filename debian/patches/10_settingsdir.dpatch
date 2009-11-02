@@ -1,0 +1,19 @@
+#! /bin/sh /usr/share/dpatch/dpatch-run
+## 10_debianstrings.dpatch by Rodolphe Quiédeville <rodolphe@quiedeville.org>
+##
+## All lines beginning with `## DP:' are a description of the patch.
+## DP: Point settings default dir to /usr/share/pgtune
+
+@DPATCH@
+diff -urNad pgtune-0.9.3~/pgtune pgtune-0.9.3/pgtune
+--- pgtune-0.9.3~/pgtune	2009-10-29 02:16:39.000000000 +0100
++++ pgtune-0.9.3/pgtune	2009-11-03 16:03:59.000000000 +0100
+@@ -414,7 +414,7 @@
+   parser.add_option('-D','--debug',action="store_true",dest="debug",
+     default="False",help="Enable debugging mode")
+ 
+-  parser.add_option('-S','--settings',dest="settings_dir",default=None, 
++  parser.add_option('-S','--settings',dest="settings_dir",default="/usr/share/pgtune", 
+     help="Directory where settings data files are located at.  Defaults to the directory where the script is being run from")
+ 
+   options,args=parser.parse_args()
