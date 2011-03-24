@@ -1,3 +1,13 @@
+pgtune (0.9.3-2) unstable; urgency=low
+
+  * New maintainer, thanks Rodolphe for the permission to take over.
+  * Add Vcs-* headers.
+  * Convert to 3.0 (quilt).
+  * Insert correct COPYRIGHT into debian/copyright.
+  * Use a "dh $@" rules file.
+
+ -- Christoph Berg <myon@debian.org>  Thu, 24 Mar 2011 14:54:32 +0100
+
 pgtune (0.9.3-1) unstable; urgency=low
 
   * Initial release (Closes: #553975) 
